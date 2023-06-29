@@ -1,0 +1,13 @@
+[package]
+name = "gst-drop-buffers"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dmitry"]
+
+[dependencies]
+gst = { version = "0.20", package = "gstreamer" }
+gst_base = { version = "0.20", package = "gstreamer-base" }
+
+[lib]
+name = "filter"
+crate-type = ["cdylib"]
